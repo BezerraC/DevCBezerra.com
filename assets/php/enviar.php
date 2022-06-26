@@ -24,7 +24,7 @@ $rta = mail('cbezerraneto@gmail.com',
 "Assunto: $subject", $body, $headers );
 // var_dump($rta);
 
-header("Location: ../../");
+// header("Location: ../../");
 
 // if ($rta->send()){
 //   echo ("<script>
@@ -37,5 +37,17 @@ header("Location: ../../");
 //         window.history.back();
 //     </script>");
 // }
+
+if(mail($subject, $body, $headers)){
+      {
+      echo "<script>document.location.href='contact.php'</script>";
+      }
+    }
+else{
+      {
+      echo "<script>alert('Mail was not sent. Please try again later');</script>";
+      }
+     }
+
 
 ?>
