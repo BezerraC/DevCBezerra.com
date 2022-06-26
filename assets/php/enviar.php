@@ -1,7 +1,5 @@
 <?php  
-if($_SERVER['REQUEST_METHOD'] != 'POST'){
-  header("Location: Index.html");
-}
+
 
 $nome = $_GET['nome'];
 $email = $_GET['email'];
