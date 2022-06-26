@@ -24,7 +24,7 @@ $rta = mail('cbezerraneto@gmail.com',
 "Assunto: $subject", $body, $headers );
 // var_dump($rta);
 
-header("Location: thanks.html");
+header("Location: ../../index.html");
 
 // if ($rta->send()){
 //   echo ("<script>
