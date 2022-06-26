@@ -1,3 +1,3 @@
-# Carlos Bezerra Developver
+# Carlos Bezerra Developer
 
-<a href="www.devcbezerra.com">My Website</a>
+<a href="https://www.devcbezerra.com/" target="_blank">My website</a>
