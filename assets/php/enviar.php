@@ -13,7 +13,7 @@ HTML;
 
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: $nome <$email> \r\n";
+$headers.= "From: DevCBezerra | $nome <$email> \r\n";
 $headers.= "To: carlos@devcbezerra.com \r\n";
 // $headers.= "Cc: cbezerraneto@gmail.com \r\n";
 // $headers.= "Bcc: cbezerraneto@gmail.com \r\n";
@@ -29,7 +29,7 @@ $rta = mail('cbezerraneto@gmail.com',
 if (mail($subject, $body, $headers)){
   echo ("<script>
         alert('Email enviado com sucesso');
-        document.location.href='../../'
+        window.history.go(-1);
     </script>");
 }else {
   echo ("<script>
