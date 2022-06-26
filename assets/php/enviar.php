@@ -7,21 +7,21 @@ $subject = $_GET['subject'];
 $mensagem = $_GET['mensagem'];
 
 //configuracao da mensagem
-var_dump($nome);
+// var_dump($nome);
 $rta = mail('cbezerraneto@gmail.com',
-"Mensagem: $subject", $mensagem );
-var_dump($rta);
+"Assunto: $subject", $mensagem );
+// var_dump($rta);
 
-// if ($mail->send()){
-//   echo ("<script>
-//         alert('Email enviado com sucesso');
-//         window.history.back();
-//     </script>");
-// }else {
-//   echo ("<script>
-//         window.alert('Falha ao enviar o Email')
-//         window.history.back();
-//     </script>");
-// }
-// 
+if ($rta->send()){
+  echo ("<script>
+        alert('Email enviado com sucesso');
+        window.history.back();
+    </script>");
+}else {
+  echo ("<script>
+        window.alert('Falha ao enviar o Email')
+        window.history.back();
+    </script>");
+}
+
 ?>
