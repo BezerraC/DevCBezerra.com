@@ -26,7 +26,7 @@ $rta = mail('cbezerraneto@gmail.com',
 
 // header("Location: ../../");
 
-if (mail($subject, $body, $headers)){
+if (mail($subject, $body)){
   echo ("<script>
         window.alert('Email enviado com sucesso');
         window.history.back();
