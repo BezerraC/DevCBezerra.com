@@ -8,7 +8,7 @@ $mensagem = $_GET['mensagem'];
 
 //configuracao da mensagem
 var_dump($nome);
-$rta = mail('carlos@devcbezerra.com',
+$rta = mail('cbezerraneto@gmail.com',
 "Mensagem: $subject", $mensagem );
 var_dump($rta);
 
