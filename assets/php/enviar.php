@@ -5,10 +5,10 @@ $subject = $_GET['subject'];
 $mensagem = $_GET['mensagem'];
 
 $body = <<<HTML
-    <h2>Contato | DevCBezerra</h2>
-    <h5>De: $nome / $email</h5>
-    <h2>Mensagem</h2>
-    <h5>$mensagem</h5>
+    <h4>Contato | DevCBezerra</h4>
+    <p>De: $nome / $email</p>
+    <h4>Mensagem</h4>
+    <p>$mensagem</p>
 HTML;
 
 $headers = "MIME-Version: 1.0 \r\n";
@@ -24,7 +24,7 @@ $rta = mail('cbezerraneto@gmail.com',
 "Assunto: $subject", $body, $headers );
 // var_dump($rta);
 
-header("Location: ../../index.html");
+header("Location: ../../");
 
 // if ($rta->send()){
 //   echo ("<script>
