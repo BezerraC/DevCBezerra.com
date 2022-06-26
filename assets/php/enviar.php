@@ -29,7 +29,7 @@ $rta = mail('cbezerraneto@gmail.com',
 if (mail($subject, $body, $headers)){
   echo ("<script>
         alert('Email enviado com sucesso');
-        window.history.go(-1);
+        window.history.back();
     </script>");
 }else {
   echo ("<script>
