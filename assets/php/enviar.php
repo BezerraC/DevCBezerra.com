@@ -13,8 +13,8 @@ HTML;
 
 $headers = "MIME-Version: 1.0 \r\n";
 $headers.= "Content-type: text/html; charset=utf-8 \r\n";
-$headers.= "From: Devcbezerra | $nome <$email> \r\n";
-$headers.= "To: devcbezerra.com \r\n";
+$headers.= "From: $nome <$email> \r\n";
+$headers.= "To: carlos@devcbezerra.com \r\n";
 // $headers.= "Cc: cbezerraneto@gmail.com \r\n";
 // $headers.= "Bcc: cbezerraneto@gmail.com \r\n";
 
