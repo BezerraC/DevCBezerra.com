@@ -11,10 +11,18 @@ $body = <<<HTML
     <p>$mensagem</p>
 HTML;
 
+$headers = "MIME-Version: 1.0 \r\n";
+$headers.= "Content-type: text/html; 
+charset=utf-8 \r\n";
+$headers.= "From: $nome <$email> \r\n";
+$headers.= "To: cbezerraneto@gmail.com \r\n";
+// $headers.= "Cc: cbezerraneto@gmail.com \r\n";
+// $headers.= "Bcc: cbezerraneto@gmail.com \r\n";
+
 //configuracao da mensagem
 var_dump($nome);
 $rta = mail('cbezerraneto@gmail.com',
-"Assunto: $subject", $body );
+"Assunto: $subject", $body, $headers );
 var_dump($rta);
 
 // if ($rta->send()){
