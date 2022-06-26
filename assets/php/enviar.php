@@ -18,7 +18,7 @@ $mail->Port = "465";
 $mail->SMTPSecure = "ssl";
 $mail->SMTPAuth = "true";
 $mail->Username = "carlos@devcbezerra.com";
-$mail->Password = "Sbwxdr2d2x";
+$mail->Password = "Sbwxdr2d2x@";
 
 //configuracao da mensagem
 
