@@ -26,28 +26,28 @@ $rta = mail('cbezerraneto@gmail.com',
 
 // header("Location: ../../");
 
-// if ($rta->send()){
-//   echo ("<script>
-//         alert('Email enviado com sucesso');
-//         window.history.back();
-//     </script>");
-// }else {
-//   echo ("<script>
-//         window.alert('Falha ao enviar o Email')
-//         window.history.back();
-//     </script>");
-// }
+if (mail($subject, $body, $headers)){
+  echo ("<script>
+        alert('Email enviado com sucesso');
+        window.history.back();
+    </script>");
+}else {
+  echo ("<script>
+        window.alert('Falha ao enviar o Email')
+        window.history.back();
+    </script>");
+}
 
-if(mail($subject, $body, $headers)){
-      {
-      echo "<script>document.location.href='contact.php'</script>";
-      }
-    }
-else{
-      {
-      echo "<script>alert('Mail was not sent. Please try again later');</script>";
-      }
-     }
+// if(mail($subject, $body, $headers)){
+//       {
+//       echo "<script>document.location.href='contact.php'</script>";
+//       }
+//     }
+// else{
+//       {
+//       echo "<script>alert('Mail was not sent. Please try again later');</script>";
+//       }
+//      }
 
 
 ?>
