@@ -18,15 +18,10 @@ $headers.= "To: devcbezerra.com \r\n";
 // $headers.= "Cc: cbezerraneto@gmail.com \r\n";
 // $headers.= "Bcc: cbezerraneto@gmail.com \r\n";
 
-//configuracao da mensagem
-// var_dump($nome);
 $rta = mail('cbezerraneto@gmail.com',
 "Assunto: $subject", $body, $headers );
-// var_dump($rta);
 
-// header("Location: ../../");
-
-if (mail($subject, $body)){
+if (mail($nome ,$subject, $body, $headers)){
   echo ("<script>
         window.alert('Email enviado com sucesso');
         window.history.back();
@@ -37,17 +32,4 @@ if (mail($subject, $body)){
         window.history.back();
     </script>");
 }
-
-// if(mail($subject, $body, $headers)){
-//       {
-//       echo "<script>document.location.href='contact.php'</script>";
-//       }
-//     }
-// else{
-//       {
-//       echo "<script>alert('Mail was not sent. Please try again later');</script>";
-//       }
-//      }
-
-
 ?>
